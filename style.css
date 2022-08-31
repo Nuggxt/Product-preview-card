@@ -1,60 +1,101 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-	background-color: hsl(30, 38%, 92%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	flex-direction: column;
-	font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 14px;
 }
 .container {
-	max-width: 375px;
-	background-color: white;
-	height: 600px;
-	border-radius: 10px;
-	overflow: hidden;
+  max-width: 340px;
+  background-color: white;
+  height: 630px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .product {
-	margin: 10px;
-	letter-spacing: 5px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	color: hsl(228, 12%, 48%);
+  margin: 20px;
+  margin-left: 20px;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
 }
 .label h1 {
-	margin: 0 5%;
-	font-family: 'Fraunces', sans-serif;
-	font-weight: 700;
-	font-size: 2.3em;
+  margin: 0 5%;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2.3em;
 }
 .info p {
-	margin: 5% 5%;
-	color: hsl(228, 12%, 48%);
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+  margin: 5% 5%;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 6px;
 }
 /* For width below 400px */
 img {
-	width: 375px;
+  width: 375px;
 }
 /*For width above 400px */
-@media only screen and (min-width: 400px)
-img {
-	background-image: url('images/image-product-desktop');
-	max-width: 700px;
+@media only screen and (min-width: 400px) img {
+  background-image: url("images/image-product-desktop");
+  max-width: 700px;
 }
 .price {
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
+}
+ul {
 	display: flex;
 }
-.attribution { 
-	font-size: 11px; 
-	text-align: center; 
+li p {
+	font-size: 2em;
 }
-.attribution a { 
-	color: hsl(228, 45%, 44%); 
+ul li {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.price li {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+}
+.price span {
+	margin-left: 20px;
+	text-decoration: line-through;
+	color: hsl(228, 12%, 48%);
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	width: 300px;
+	height: 45px;
+	margin-top: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
